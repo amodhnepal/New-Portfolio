@@ -8,7 +8,8 @@ body{
 }
 .main-sec{
     background-color: #024273;
-    height: 100vh;
+    height: auto;
+    
 }
 .nav{
     display: flex;
@@ -43,13 +44,27 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 40px;
+    margin: 20px 100px;
 
     padding: 30px;
     border-radius: 50px;
     height: 600px;
     position: relative;
     /* object-position: top; */
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+.wave-svg{
+    /* display: flex; */
+    position: absolute;
+    background-attachment: fixed;
+    bottom: 0;
+    margin: -30px;
+    
+}
+.up{
+top: 0;
 }
 .main-heading{
     font-size: 50px;
@@ -64,6 +79,14 @@ body{
     /* box-shadow: 0 10px 20px  rgba(0,0,0,.6); */
     border-radius: 30px;
     border-bottom: 5px solid #1b5581;
+}
+.topic-heading{
+    font-size: 72px;
+    color: #fff ;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 50px;
+    border-top: 2px solid #1b5581;
 }
 
 .intro .profile{
@@ -83,4 +106,9 @@ object-fit: contain;
     font-weight: 700;
     font-size: 22px;
     color: #024273;
+}
+.skill-div{
+    height: auto;
+    background-color: #fff;
+   display: flex;
 }
