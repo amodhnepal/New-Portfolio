@@ -2,10 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Monstserrat';
 }
-body{
-    font-family: sans-serif;
-}
+
 .main-sec{
     background-color: #024273;
     height: auto;
@@ -16,11 +15,19 @@ body{
     justify-content: space-between;
     align-items: center;
     color: #fff;
+    margin: 0px 100px;
     
 }
 .nav-content{
     display: flex;
-
+    
+}
+.nav-items a:hover,.nav-items:hover {
+    color: #0099ff ; 
+    transition: all 0.1s ease ;
+    transform: scale(1.2);
+}
+.nav-items {
     
 }
 .nav-content .nav-items{
@@ -31,7 +38,7 @@ body{
 .nav img{
     height: 150px;
     width: auto;
-    margin-left: 30px;
+    
 }
 .nav a{
     color: #fff;
@@ -39,36 +46,44 @@ body{
     margin: 30px;
     font-size: 20px;
 }
+.main-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .intro{
     background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 100px;
-
+    margin: 0px 100px 100px 100px;
     padding: 30px;
     border-radius: 50px;
     height: 600px;
+    
     position: relative;
-    /* object-position: top; */
+   
     object-fit: cover;
     overflow: hidden;
     
 }
-.wave-svg{
+.wave-svg {
     /* display: flex; */
     position: absolute;
     background-attachment: fixed;
     bottom: 0;
     margin: -30px;
     
+    
 }
+
 .up{
 top: 0;
 }
 .main-heading{
     font-size: 50px;
     margin-bottom: 15px;
+    color: #02355c;
 }
  .heading{
     width: 600px;
@@ -77,8 +92,12 @@ top: 0;
     padding: 30px;
     
     /* box-shadow: 0 10px 20px  rgba(0,0,0,.6); */
-    border-radius: 30px;
-    border-bottom: 5px solid #1b5581;
+    
+}
+.intro-paragraph{
+    line-height: 150%;
+    font-size: 20px;
+    text-align: justify;
 }
 .topic-heading{
     font-size: 72px;
@@ -89,15 +108,20 @@ top: 0;
     border-top: 2px solid #1b5581;
 }
 
-.intro .profile{
+ .profile{
     height: 400px;
     width: 400px;
-object-fit: contain;
-
+    object-fit: cover;
+    object-position:top ;
  /* border:2px solid black ; */ 
     border-radius: 1000%;
     box-shadow: 0 20px 30px #1b5581;
     margin-right: 80px;
+}
+.profile:hover{
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 .img-caption{
     position: absolute;
@@ -106,9 +130,4 @@ object-fit: contain;
     font-weight: 700;
     font-size: 22px;
     color: #024273;
-}
-.skill-div{
-    height: auto;
-    background-color: #fff;
-   display: flex;
 }
